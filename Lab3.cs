@@ -68,7 +68,7 @@ namespace Lab3
 
         public override string ToString()  // методы
         {
-            string info = "Name: " + Name + ";" + "Surname:" + Surname + " Age: " + age + ";" + " Height: " + height + ";" + " Weight: " + weight + ";";
+            string info = " Name: " + Name + ";" + " Surname: " + Surname + " Age: " + age + ";" + " Height: " + height + ";" + " Weight: " + weight + ";";
             return info;
 
         }
