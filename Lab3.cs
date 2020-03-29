@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace lab3
+namespace Lab3
 {
     class Person
     { 
