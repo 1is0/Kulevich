@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 
 namespace Lab3
 {
-    class Person
-    { 
+    class Human
+    {
         protected int age;
         public double weight;
         public double height;
@@ -15,7 +15,7 @@ namespace Lab3
         public string Name { get; set; }
         public string Surname { get; set; }
 
-        
+
         public int Age           //свойства
         {
             get { return age; }
@@ -34,8 +34,8 @@ namespace Lab3
             set { height = value > 0 ? value : 0; }
         }
 
-       
-        public Person()         //конструкторы
+
+        public Human()         //конструкторы
         {
             Name = "Lesha";
             Surname = "Kulevich";
@@ -45,8 +45,8 @@ namespace Lab3
             population++;
         }
 
-        public Person(int a, double h, double w)
-        { 
+        public Human(int a, double h, double w)
+        {
             Name = "Lesha";
             Surname = "Kulevich";
             age = a;
@@ -55,7 +55,7 @@ namespace Lab3
             population++;
         }
 
-        public Person(string n, string s, int a, double h, double w)
+        public Human(string n, string s, int a, double h, double w)
         {
             Name = n;
             Surname = s;
@@ -65,7 +65,7 @@ namespace Lab3
             population++;
         }
 
-        
+
         public override string ToString()  // методы
         {
             string info = "Name: " + Name + ";" + "Surname:" + Surname + " Age: " + age + ";" + " Height: " + height + ";" + " Weight: " + weight + ";";
@@ -73,7 +73,7 @@ namespace Lab3
 
         }
 
-     
+
         public void Increase(int a)    //перегрузка методов
         {
             age += a;
@@ -84,7 +84,7 @@ namespace Lab3
             age += a;
             height += h;
             weight += w;
-           
+
         }
 
         public static void Show()
@@ -92,9 +92,9 @@ namespace Lab3
             Console.WriteLine("The population is: " + population);
         }
 
-        public Person(int n)     
+        public Human(int n)
         {
-           family = new string[n];
+            family = new string[n];
         }
 
         public string this[int n]  //индексатор
@@ -111,23 +111,23 @@ namespace Lab3
         }
 
 
-        
+
     }
     class Program
     {
         static void Main(string[] args)
         {
 
-            Person.Show();          //работа со статическим элементом
+            Human.Show();          //работа со статическим элементом
             Console.WriteLine();
 
 
-            Person manTwo = new Person(19, 1.79, 79);
+            Human manTwo = new Human(19, 1.79, 79);
             Console.WriteLine(manTwo);
             Console.WriteLine();
 
-            Person manOne = new Person();
-            
+            Human manOne = new Human();
+
             manOne.Name = "Nastya";
             manOne.Surname = "Kruglaya";
             manOne.Age = 18;
@@ -136,7 +136,7 @@ namespace Lab3
             Console.WriteLine(manOne);
             Console.WriteLine();
 
-            Person.Show();     //работа со статическим элементом
+            Human.Show();     //работа со статическим элементом
             Console.WriteLine();
 
             manOne.Increase(2);
@@ -149,7 +149,7 @@ namespace Lab3
 
 
 
-            Person familyMembers = new Person(4);         //использование индексатора
+            Human familyMembers = new Human(4);         //использование индексатора
             familyMembers[0] = "Mother";
             familyMembers[1] = "Father";
             familyMembers[2] = "Grandmother";
