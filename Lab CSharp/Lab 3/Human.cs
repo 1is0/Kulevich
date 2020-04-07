@@ -108,6 +108,7 @@ namespace Lab3
             {
                 family[n] = value;
             }
-        }
-        
+        }      
     }
+    
+}
