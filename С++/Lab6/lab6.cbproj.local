@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899 12 30 00:00:00.000.437,C:\Users\asus\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\lab6.cbproj</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.776,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Tree.cpp=</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.244,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Project1PCH1.h=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\lab6PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.714,C:\Users\asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Main.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.194,=C:\Users\asus\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.477,C:\Users\asus\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.297,=C:\Users\asus\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.166,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.h=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Tree.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.016,=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.286,=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.742,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.cpp=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Except.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.166,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.cpp=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Tree.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.742,C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Unit1.h=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Except.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.714,C:\Users\asus\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Main.dfm</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.714,C:\Users\asus\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\asus\Documents\Embarcadero\Studio\Projects\2 sem\6 lab\Main.h</Transaction>
+  </Transactions>
+</BorlandProject>
