@@ -81,7 +81,7 @@ int main()
     while (true)
     {
         printf("Enter the pomer of the numper 3: n =");
-        while ((!scanf_s("%d", &n)) || (n <= 0))
+        while ((!scanf("%d", &n)) || (n <= 0))
         {
             printf("Wrong input! Try again. n =\n");
             rewind(stdin);
