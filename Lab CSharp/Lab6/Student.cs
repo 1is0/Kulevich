@@ -114,4 +114,5 @@ namespace Lab6
         third,
         fourth
     }
- }
+    enum Level { Low, Mid, High, Ultra }
+}
