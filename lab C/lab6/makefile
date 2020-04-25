@@ -6,4 +6,4 @@ build: Lab6.o
 run:
       	Lab6.exe
 clean:
-	      del *.o Lab6  
+	del *.o Lab6  
