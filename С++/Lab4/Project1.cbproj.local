@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899 12 30 00:00:00.000.034,D:\2-ой сем\C++\Labs\Num_4_1\Unit1.cpp=D:\2-ой сем\C++\Lerning\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.843,D:\2-ой сем\C++\Labs\Num_4_1\Stack.h=D:\2-ой сем\C++\Lerning\Stack.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.358,D:\2-ой сем\C++\Lerning\Stack.h=D:\2-ой сем\C++\Lerning\Unit2.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.595,=D:\2-ой сем\C++\Lerning\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.028,D:\2-ой сем\C++\Labs\Num_4_1\Project1PCH1.h=D:\2-ой сем\C++\Lerning\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.034,D:\2-ой сем\C++\Labs\Num_4_1\Unit1.dfm=D:\2-ой сем\C++\Lerning\Unit1.dfm</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.576,=D:\2-ой сем\C++\Lerning\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.034,D:\2-ой сем\C++\Labs\Num_4_1\Unit1.h=D:\2-ой сем\C++\Lerning\Unit1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.358,D:\2-ой сем\C++\Lerning\Stack.cpp=D:\2-ой сем\C++\Lerning\Unit2.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.223,=D:\2-ой сем\C++\Lerning\Unit2.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.135,D:\2-ой сем\C++\Labs\Num_4_1\Project1.cbproj=D:\2-ой сем\C++\Lerning\Project1.cbproj</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.516,=D:\2-ой сем\C++\Lerning\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.370,=D:\2-ой сем\C++\Lerning\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.843,D:\2-ой сем\C++\Labs\Num_4_1\Stack.cpp=D:\2-ой сем\C++\Lerning\Stack.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
