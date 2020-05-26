@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899 12 30 00:00:00.000.420,C:\Users\Dany\Downloads\lab4\LR4\Unit1.cpp=C:\Users\Dany\Downloads\lab4\LR4\MainWindow.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.917,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\Stack.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Stack.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.396,C:\Users\Dany\Downloads\lab4\LR4\Unit2.cpp=C:\Users\Dany\Downloads\lab4\LR4\Stack.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.356,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.748,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.154,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.213,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Stack.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.450,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\MainWindow.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.866,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.917,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\Stack.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Stack.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.866,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.866,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.775,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.450,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\MainWindow.dfm=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.dfm</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.541,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\Project1.cbproj=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.574,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\Project1PCH1.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.450,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\LR4\MainWindow.cpp=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\MainWindow.cpp</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.420,C:\Users\Dany\Downloads\lab4\LR4\Unit1.dfm=C:\Users\Dany\Downloads\lab4\LR4\MainWindow.dfm</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.213,C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Stack.h=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.574,=C:\Users\Dany\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.396,C:\Users\Dany\Downloads\lab4\LR4\Unit2.h=C:\Users\Dany\Downloads\lab4\LR4\Stack.h</Transaction>
+    <Transaction>1899 12 30 00:00:00.000.420,C:\Users\Dany\Downloads\lab4\LR4\Unit1.h=C:\Users\Dany\Downloads\lab4\LR4\MainWindow.h</Transaction>
+    <Transaction>2020 05 26 22:23:32.040,C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Stack.h=C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Unit2.h</Transaction>
+    <Transaction>2020 05 26 22:23:32.040,C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Stack.cpp=C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Unit2.cpp</Transaction>
+    <Transaction>2020 05 26 22:23:46.326,C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Main.cpp=C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Unit1.cpp</Transaction>
+    <Transaction>2020 05 26 22:23:46.326,C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Main.dfm=C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Unit1.dfm</Transaction>
+    <Transaction>2020 05 26 22:23:46.326,C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Main.h=C:\Users\Леша\Desktop\2 сем\ОАиП\ЛАБА4444НАГИТ\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>
