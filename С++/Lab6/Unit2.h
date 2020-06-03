@@ -22,9 +22,9 @@ class MyTree
 	int addToMassFromTree(PointerNode, int*, AnsiString*, int&);
 	PointerNode findNewNode(int, PointerNode);
 	void balance();
-	void deliteTree();
-	void deliteTreeRecursively(PointerNode);
-	void deliteNode(int);
+	void deleteTree();
+	void deleteTreeRecursively(PointerNode);
+	void deleteNode(int);
 	void createTreeByMass(int*, AnsiString*, int);
 	PointerNode createTreeMassRecursively(int*, AnsiString*, int, int);
 	void showTree(TTreeView*);
