@@ -18,7 +18,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
     void __fastcall TForm1::Button7Click(TObject *Sender)
 {
-	ThisTree.delTree();
+	ThisTree.deleteTree();
 	try
 	{
 		for(int i = 0; !(MemoKey->Lines->Strings[i]).IsEmpty() && !(MemoFIO->Lines->Strings[i]).IsEmpty(); i++)
@@ -29,7 +29,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 	}
 	catch(EConvertError&)
 	{
-		Application->MessageBox(String("Êëþ÷ äîëæåí áûòü ÷èñëîì!").c_str(), String("Îøèáêà").c_str(), MB_OK);
+		Application->MessageBox(String("ÃŠÃ«Ã¾Ã· Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¡Ã»Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã®Ã¬!").c_str(), String("ÃŽÃ¸Ã¨Ã¡ÃªÃ ").c_str(), MB_OK);
 	}
 	ThisTree.showTree(TreeView);
 }
@@ -45,14 +45,14 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 	}
 	catch(EConvertError&)
 	{
-		Application->MessageBox(String("Êëþ÷ äîëæåí áûòü ÷èñëîì!").c_str(), String("Îøèáêà").c_str(), MB_OK);
+		Application->MessageBox(String("ÃŠÃ«Ã¾Ã· Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¡Ã»Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã®Ã¬!").c_str(), String("ÃŽÃ¸Ã¨Ã¡ÃªÃ ").c_str(), MB_OK);
 	}
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
-	ThisTree.balanceTree();
+	ThisTree.balance();
 	ThisTree.showTree(TreeView);
 }
 //---------------------------------------------------------------------------
@@ -62,12 +62,12 @@ void __fastcall TForm1::Button3Click(TObject *Sender)
 	try
 	{
 		int tkey = (EditKey->Text).ToInt();
-		ThisTree.delNode(tkey);
+		ThisTree.deleteNode(tkey);
 		ThisTree.showTree(TreeView);
 	}
 	catch(EConvertError&)
 	{
-		Application->MessageBox(String("Êëþ÷ äîëæåí áûòü ÷èñëîì!").c_str(), String("Îøèáêà").c_str(), MB_OK);
+		Application->MessageBox(String("ÃŠÃ«Ã¾Ã· Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¡Ã»Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã®Ã¬!").c_str(), String("ÃŽÃ¸Ã¨Ã¡ÃªÃ ").c_str(), MB_OK);
 	}
 }
 //---------------------------------------------------------------------------
@@ -81,7 +81,7 @@ void __fastcall TForm1::Button6Click(TObject *Sender)
 	}
 	catch(EConvertError&)
 	{
-		Application->MessageBox(String("Êëþ÷ äîëæåí áûòü ÷èñëîì!").c_str(), String("Îøèáêà").c_str(), MB_OK);
+		Application->MessageBox(String("ÃŠÃ«Ã¾Ã· Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¡Ã»Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã®Ã¬!").c_str(), String("ÃŽÃ¸Ã¨Ã¡ÃªÃ ").c_str(), MB_OK);
 	}
 }
 //---------------------------------------------------------------------------
@@ -115,7 +115,7 @@ void __fastcall TForm1::Button4Click(TObject *Sender)
 
   float ans = ThisTree.exercisesolution();
   Label11->Caption = FloatToStrF(ans,ffGeneral,3,2);
-  Label13->Caption = ThisTree.findByKey(ThisTree.maxDiff((int)ans));
+  Label13->Caption = ThisTree.findByKey(ThisTree.findMaxDifference((int)ans));
 
 }
 //---------------------------------------------------------------------------
