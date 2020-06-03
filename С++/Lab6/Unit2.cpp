@@ -26,7 +26,7 @@ void MyTree::addNode(int newkey, AnsiString newname)
 		wNode = findNewNode(newkey, root);
 		if(wNode == NULL)
 		{
-			Application->MessageBox(String("Элемент с таким ключом существует").c_str(), String("Ошибка").c_str(), MB_OK);
+			Application->MessageBox(String("ГќГ«ГҐГ¬ГҐГ­ГІ Г± ГІГ ГЄГЁГ¬ ГЄГ«ГѕГ·Г®Г¬ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ").c_str(), String("ГЋГёГЁГЎГЄГ ").c_str(), MB_OK);
 		}
 		else
 		{
@@ -71,7 +71,7 @@ PointerNode MyTree::findNewNode(int tkey, PointerNode ptr)
 
 }
 
-void MyTree::balanceTree()
+void MyTree::balance()
 {
 	if(nodesamount > 1)
 	{
@@ -100,7 +100,7 @@ void MyTree::createTreeByMass(int *keys, AnsiString *names, int endborder)
 	root = createTreeMassRec(keys, names, 0, endborder);
 }
 
-PointerNode MyTree::createTreeMassRec(int *keys, AnsiString *names, int beg, int endborder)
+PointerNode MyTree::createTreeMassRecursively(int *keys, AnsiString *names, int beg, int endborder)
 {
 	PointerNode Tree;
 	int border1, border2;
@@ -116,13 +116,13 @@ PointerNode MyTree::createTreeMassRec(int *keys, AnsiString *names, int beg, int
 	return Tree;
 }
 
-void MyTree::delTree()
+void MyTree::deleteTree()
 {
 	delTreeRec(root);
 	nodesamount = 0;
 }
 
-void MyTree::delTreeRec(PointerNode ptr)
+void MyTree::deleteTreeRecursively(PointerNode ptr)
 {
 	if(ptr != NULL)
 	{
@@ -135,7 +135,7 @@ void MyTree::delTreeRec(PointerNode ptr)
 	}
 }
 
-void MyTree::delNode(int key)
+void MyTree::deleteNode(int key)
 {
 	PointerNode ptr = root, prevptr = NULL;
 	while(ptr != NULL && ptr->key != key)
@@ -146,7 +146,7 @@ void MyTree::delNode(int key)
 	}
 	if(ptr == NULL)
 	{
-		Application->MessageBox(String("Элементf с таким ключом нет").c_str(), String("Ошибка").c_str(), MB_OK);
+		Application->MessageBox(String("ГќГ«ГҐГ¬ГҐГ­ГІf Г± ГІГ ГЄГЁГ¬ ГЄГ«ГѕГ·Г®Г¬ Г­ГҐГІ").c_str(), String("ГЋГёГЁГЎГЄГ ").c_str(), MB_OK);
 		nodesamount++;
 	}
 	else if(ptr == root && ptr->left == NULL && ptr->right == NULL)
@@ -208,7 +208,7 @@ AnsiString MyTree::findByKey(int key)
 	}
 	if(ptr == NULL)
 	{
-		Application->MessageBox(String("Элементa с таким ключом нет").c_str(), String("Ошибка").c_str(), MB_OK);
+		Application->MessageBox(String("ГќГ«ГҐГ¬ГҐГ­ГІa Г± ГІГ ГЄГЁГ¬ ГЄГ«ГѕГ·Г®Г¬ Г­ГҐГІ").c_str(), String("ГЋГёГЁГЎГЄГ ").c_str(), MB_OK);
 		return ".....";
 	}
 	else return ptr->name;
@@ -225,7 +225,7 @@ void MyTree::showTree(TTreeView *TreeView)
 	}
 }
 
-void MyTree::showTreeRec(PointerNode ptr, TTreeView *TreeView, int &index)
+void MyTree::showTreeRecursively(PointerNode ptr, TTreeView *TreeView, int &index)
 {
 	int nowindex = index;
 	if(ptr->left != NULL)
@@ -249,7 +249,7 @@ void MyTree::preOrder(TListBox *ListBox)
 		preOrderRec(root, ListBox);
 }
 
-void MyTree::preOrderRec(PointerNode ptr, TListBox *ListBox)
+void MyTree::preOrderRecursively(PointerNode ptr, TListBox *ListBox)
 {
 	ListBox->Items->Add(AnsiString(ptr->key) + " " + ptr->name);
 	if(ptr->left != NULL) preOrderRec(ptr->left, ListBox);
@@ -263,7 +263,7 @@ void MyTree::postOrder(TListBox *ListBox)
 		postOrderRec(root, ListBox);
 }
 
-void MyTree::postOrderRec(PointerNode ptr, TListBox *ListBox)
+void MyTree::postOrderRecursively(PointerNode ptr, TListBox *ListBox)
 {
 	if(ptr->left != NULL) postOrderRec(ptr->left, ListBox);
 	if(ptr->right != NULL) postOrderRec(ptr->right, ListBox);
@@ -278,7 +278,7 @@ void MyTree::inOrder(TListBox *ListBox)
 		inOrderRec(root, ListBox);
 }
 
-void MyTree::inOrderRec(PointerNode ptr, TListBox *ListBox)
+void MyTree::inOrderRecursively(PointerNode ptr, TListBox *ListBox)
 {
 	if(ptr->left != NULL) inOrderRec(ptr->left, ListBox);
 	ListBox->Items->Add(AnsiString(ptr->key) + " " + ptr->name);
@@ -297,7 +297,7 @@ float Solution::exercisesolution()
 	return mid;
 
 }
-void Solution::findSumRec(PointerNode ptr, int &sum, int&counter)
+void Solution::sumRecursively(PointerNode ptr, int &sum, int&counter)
 {
 	if(ptr->left != NULL) findSumRec(ptr->left, sum, counter);
 	sum+=ptr->key;
@@ -305,32 +305,27 @@ void Solution::findSumRec(PointerNode ptr, int &sum, int&counter)
 	if(ptr->right != NULL) findSumRec(ptr->right, sum, counter);
 }
 
-void Solution::maxDiffUtil(PointerNode ptr, int key, int &min_diff, int &min_diff_key)
+void Solution::findMaxDifferenceUtil(PointerNode ptr, int key, int &min_diff, int &min_diff_key)
 {
 	if (ptr == NULL)  return ;
-	// Если присутствует само k
 	if (ptr->key == key)
 	{
 		min_diff_key = key;
 		return;
 	}
-	// обновляем min_diff и min_diff_key, проверяя текущее значение узла
 	if (min_diff > abs(ptr->key - key))
 	{
 		min_diff = abs(ptr->key - key);
 		min_diff_key = ptr->key;
 	}
-	// если key меньше чем ptr-> key, то двигаться левое поддерево еще в правом поддереве
 	if (key < ptr->key) maxDiffUtil(ptr->left, key, min_diff, min_diff_key);
 	else maxDiffUtil(ptr->right, key, min_diff, min_diff_key);
 }
 
-int Solution::maxDiff(int key)
+int Solution::findMaxDifference(int key)
 {
 	PointerNode ptr = root;
-	// Инициализируем минимальную разницу
 	int min_diff = INT_MAX, min_diff_key = -1;
-	// Находим значение min_diff_key (ближайший ключ в дереве с key)
 	maxDiffUtil(ptr, key, min_diff, min_diff_key);
 	return min_diff_key;
 }
