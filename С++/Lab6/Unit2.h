@@ -18,38 +18,32 @@ class MyTree
 	PointerNode root;
 	int nodesamount;
 	MyTree();
-	void addNode(int newkey, AnsiString newname);
-	int addToMassFromTree(PointerNode ptr, int* keys, AnsiString* name, int &inMass);
-	PointerNode findNewNode(int thiskey, PointerNode ptr);
-
-	void balanceTree();
-
-	void delTree();
-	void delTreeRec(PointerNode ptr);
-	void delNode(int key);
-
-	void createTreeByMass(int* keys, AnsiString* name, int endborder);
-	PointerNode createTreeMassRec(int* keys, AnsiString* name, int beg, int endborder);
-
-	void showTree(TTreeView *TreeView);
-	void showTreeRec(PointerNode ptr, TTreeView *TreeView, int &index);
-
-	AnsiString findByKey(int key);
-
-	void preOrder(TListBox *ListBox);
-	void postOrder(TListBox *ListBox);
-	void inOrder(TListBox *ListBox);
-	void preOrderRec(PointerNode ptr, TListBox *ListBox);
-	void postOrderRec(PointerNode ptr, TListBox *ListBox);
-	void inOrderRec(PointerNode ptr, TListBox *ListBox);
+	void addNode(int, AnsiString);
+	int addToMassFromTree(PointerNode, int*, AnsiString*, int&);
+	PointerNode findNewNode(int, PointerNode);
+	void balance();
+	void deliteTree();
+	void deliteTreeRecursively(PointerNode);
+	void deliteNode(int);
+	void createTreeByMass(int*, AnsiString*, int);
+	PointerNode createTreeMassRecursively(int*, AnsiString*, int, int);
+	void showTree(TTreeView*);
+	void showTreeRecursively(PointerNode, TTreeView*, int&);
+	AnsiString findByKey(int);
+	void preOrder(TListBox*);
+	void postOrder(TListBox*);
+	void inOrder(TListBox*);
+	void preOrderRecursively(PointerNode, TListBox*);
+	void postOrderRecursively(PointerNode, TListBox*);
+	void inOrderRecursively(PointerNode, TListBox*);
 };
 
 class Solution : public MyTree
 {
 public:
 	float exercisesolution();
-	void findSumRec(PointerNode root, int &sum, int& counter);
-	int maxDiff(int key);
-	void maxDiffUtil(PointerNode ptr, int key, int &min_diff, int &min_diff_key);
+	void sumRecursively(PointerNode, int&, int&);
+	int findMaxDifference(int);
+	void findMaxDifferenceUtil(PointerNode, int, int&, int&);
 };
 #endif
